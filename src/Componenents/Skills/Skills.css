@@ -1,0 +1,57 @@
+.skills {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills h1 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.skills-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill-box {
+  background: linear-gradient(to right, #1b1b1c, #070707, #000000);
+  padding: 1.5rem 1.2rem;
+  border-radius: 12px;
+  max-width: 280px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px);
+}
+
+.skill-box i {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.skill-box h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.skill-box p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skills-base {
+    flex-direction: column;
+    align-items: center;
+  }
+}

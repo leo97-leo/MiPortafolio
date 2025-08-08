@@ -1,0 +1,33 @@
+.footer {
+  background: linear-gradient(to right, #1b1b1c, #070707, #000000);
+	padding: 20px 8vw;
+	color: #f9f9f9;
+	margin-top: 50px;
+	text-align: center;
+}
+/* estilos pra los icono de la redes sociales*/
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin: 15px;
+}
+
+/*estilos inidviduales de caada icono*/
+.social-icons a {
+	 color: white;
+	 font-size:20px;
+	 transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+	transform: scale;
+	color: #3931e1;
+}
+
+@media (max-width: 600px) {
+	.social-icons{
+		gap: 10px;
+	}
+	
+}

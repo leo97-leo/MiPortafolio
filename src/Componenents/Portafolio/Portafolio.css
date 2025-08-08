@@ -1,0 +1,108 @@
+.portafolio {
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 2vw;
+}
+
+.portafolio h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+/* Contenedor de tarjetas */
+.portafolio-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+/* Tarjeta individual */
+.portafolio-card {
+	display: flex;
+	height: 230px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+	background-color: #1e1d4b;
+}
+
+/* Imagen del proyecto */
+.portafolio-image {
+	width: 50%;
+	object-fit: cover;
+}
+
+/* Contenido del proyecto */
+.portafolio-content {
+	width: 50%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.portafolio-content h3 {
+	font-size: 1.2rem;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.portafolio-content p {
+	font-weight: 400;
+	color: #ffffff;
+}
+
+/* Botón demo */
+.demon-button {
+	display: inline-block;
+	padding: 10px 15px;
+	background: #3931e1;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background 0.3s ease;
+}
+
+.demon-button:hover {
+	opacity: 0.9;
+}
+
+/* Media queries */
+@media (max-width: 950px) {
+	
+.portafolio-container {
+		grid-template-columns: 1fr 1fr;
+	}
+	.portafolio-card {
+		
+		height: auto;
+	}
+
+	
+}
+@media (max-width: 750px) {
+	.portafolio {
+	
+	padding: 0 8vw;
+}
+	.portafolio-container {
+		grid-template-columns: 1fr;
+	}
+
+	.portafolio-card {
+		flex-direction: column;
+		height: auto;
+		
+	}
+
+	.portafolio-image,
+	.portafolio-content {
+		width: 100%;
+	}
+	
+}
